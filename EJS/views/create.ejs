@@ -1,0 +1,58 @@
+<%- include("_header") %>
+
+<body>
+  <h1>Create</h1>
+
+  <form
+    action="/task"
+    method="post"
+  >
+
+    <label for="title">Title</label>
+    <input
+      id="title"
+      name="title"
+      type="text"
+      placeholder="Title ..."
+    />
+
+    <br />
+
+    <label for="description">Description</label>
+    <input
+      id="description"
+      name="description"
+      type="text"
+      placeholder="Description ..."
+    />
+    <br>
+
+    <label for="start_date">Start date</label>
+    <input
+      id="start_date"
+      name="start_date"
+      type="date"
+    />
+    <br>
+
+    <label for="end_date">End date</label>
+    <input
+      id="end_date"
+      name="end_date"
+      type="date"
+    />
+
+    <br />
+
+    <label for="done">Done</label>
+    <input
+      id="done"
+      name="done"
+      type="checkbox"
+    />
+
+    <button type="submit">Submit</button>
+  </form>
+</body>
+
+<%- include("_footer") %>
